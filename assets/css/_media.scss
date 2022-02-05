@@ -1,0 +1,64 @@
+@media (max-width: 999px) {
+    .navbar{
+        .hamburger{
+            display: block !important;
+        }
+
+        .navbar-nav{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-color: #fff;
+            top: 109px;
+            right: -100%;
+            z-index: 9999;
+            flex-direction: column !important;
+            justify-content: flex-start;
+            text-align: center;
+            transition: all .4s linear;
+
+            li{
+                margin: 20px 0px !important;
+            }
+
+            &.acitve-nav{
+                right: 0px !important;
+            }
+        }
+    }
+
+    header{
+        .header-content{
+            width: 100% !important;
+        }
+
+        .owl-nav{
+            top: unset !important;
+            transform: translateY(0px) !important;
+            bottom: 20px !important;
+            justify-content: center !important;
+            button{
+                margin: 0px 10px !important;
+            }
+        }
+    }
+
+    footer{
+        overflow: hidden;
+        .links{
+            flex-wrap: wrap;
+            text-align: center;
+            li{
+                text-align: center;
+
+                a{
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        .socail li{
+            margin-inline-end: 5px;
+        }
+    }
+}
