@@ -214,7 +214,11 @@
 .general-box{
     width: 100%;
     padding: 20px 15px;
+    height: 100%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     box-shadow: 0px 0px 10px rgba($color: #0c2d62 , $alpha: .05);
     position: relative;
@@ -621,6 +625,10 @@ header{
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .general-box h4{
+        direction: ltr !important;
     }
 }
 footer{
